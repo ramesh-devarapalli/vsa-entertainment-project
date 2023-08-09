@@ -17,22 +17,25 @@
 @media(max-width:768px) {
     .home_welcome_para {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
+        margin-left: 50px;
     }
 
     .home_para {
-        font-weight: 600;
-        margin-left: 45px;
+        font-weight: 400;
+        margin-left: 47px;
     }
+
 }
+
 
 .home_welcome_para {
     font-weight: bold;
-
+    font-size: 35px;
 }
 
 .home_para {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .vsa_short {
@@ -73,7 +76,7 @@
 
 
 .vsa_container {
-    margin-top: 80px;
+    margin-top: 103px;
     display: flex;
     margin-left: 60px;
     margin-right: 60px;
@@ -86,7 +89,7 @@
 }
 
 #navWayuparty {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     font-family: "Roboto";
     font-weight: bold;
@@ -113,7 +116,7 @@ body {
 }
 
 #navHome {
-    color: black;
+    color: grey;
     font-family: "Roboto";
 }
 
@@ -144,11 +147,13 @@ body {
 .our_mission_head {
     color: white;
     font-weight: bold;
+    font-size: 35px;
 }
 
 .our_mission_para {
     color: white;
     width: 700px;
+    font-weight: 400;
 }
 
 .on_blue_image {
@@ -243,7 +248,7 @@ body {
 
 .expertise_para {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @media(max-width:768px) {
@@ -467,7 +472,7 @@ body {
     background-image: url("https://res.cloudinary.com/dsw1a6wwx/image/upload/v1690542523/blue_colour_o9x1az.png");
     background-size: cover;
     height: 67px;
-    margin-top: 50px;
+    margin-top: 22px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -478,8 +483,7 @@ body {
 .career_product_below {
     color: white;
     font-family: "Roboto";
-    margin-bottom: 3px;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 20px;
 }
 
@@ -489,7 +493,7 @@ body {
 }
 
 .drop_button {
-    margin-top: 12px;
+    margin-top: 20px;
     margin-right: 10px;
 }
 
@@ -590,15 +594,15 @@ body {
     background-color: grey;
     margin-top: 100px;
     padding-top: 8px;
-    padding-bottom: 18px;
+    padding-bottom: 5px;
 }
 
 .copyrights_paragraph {
     color: black;
     font-family: Roboto;
     font-size: 26px;
-    margin-left: 100px;
-    padding: 10px;
+    margin-left: 80px;
+    padding: 8px;
     text-align: center;
 }
 
@@ -607,7 +611,6 @@ body {
     font-family: Roboto;
     font-size: 20px;
     margin-left: 30px;
-    margin-bottom: 20px;
     margin-top: 30px;
 }
 
@@ -681,7 +684,7 @@ body {
     video {
         width: 80%;
         height: auto;
-        margin-left: 15px;
+        margin-left: 5px;
     }
 
 }
@@ -696,7 +699,7 @@ body {
 @media(max-width:768px) {
     .mail {
         font-family: Roboto;
-        font-size: 20px;
+        font-size: 13px;
         margin-left: 0px;
         margin-top: 30px;
     }
@@ -738,7 +741,7 @@ body {
     height: 20px;
     border-width: 4px;
     color: black;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .error-message {
@@ -770,8 +773,6 @@ body {
 }
 
 
-
-
 .totally_margin {
     margin-top: 50px;
 }
@@ -785,7 +786,7 @@ body {
 }
 
 .career_job_portion {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 80px;
 }
 
@@ -852,4 +853,20 @@ body {
 .nav_font_sizes {
     font-size: 28px;
     font-family: "Roboto";
+}
+
+
+#navHome.clicked {
+    color: black;
+    font-weight: bold;
+}
+
+#navCareers.clicked {
+    color: black;
+    font-weight: bold;
+}
+
+#navAbout.clicked {
+    color: black;
+    font-weight: bold;
 }
