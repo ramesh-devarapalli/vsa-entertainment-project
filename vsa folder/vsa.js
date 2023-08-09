@@ -4,6 +4,7 @@ let apps = document.getElementById("apps");
 let navCareers = document.getElementById("navCareers");
 let navWayuparty = document.getElementById("navWayuparty");
 
+
 let home = document.getElementById("home");
 let about = document.getElementById("about");
 let careers = document.getElementById("careers");
@@ -26,7 +27,6 @@ let viewAllJobsPage = document.getElementById("viewAllJobsPage");
 let viewAllButton = document.getElementById("viewAllButton");
 
 
-
 navHome.addEventListener("click", function() {
     home.classList.remove("block");
     about.classList.add("block");
@@ -34,6 +34,9 @@ navHome.addEventListener("click", function() {
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
     applyPortion.classList.add("block");
+    navHome.classList.add("clicked");
+    navAbout.classList.remove("clicked");
+    navCareers.classList.remove("clicked");
 });
 
 navAbout.addEventListener("click", function() {
@@ -43,9 +46,16 @@ navAbout.addEventListener("click", function() {
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
     applyPortion.classList.add("block");
+    navCareers.classList.remove("clicked");
+    navHome.classList.remove("clicked");
+    navAbout.classList.add("clicked");
 });
+
 apps.addEventListener("click", function() {
     appDropDown.classList.toggle("block");
+    navCareers.classList.remove("clicked");
+    navHome.classList.remove("clicked");
+    navAbout.classList.remove("clicked");
 });
 
 navCareers.addEventListener("click", function() {
@@ -55,6 +65,9 @@ navCareers.addEventListener("click", function() {
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
     applyPortion.classList.add("block");
+    navCareers.classList.add("clicked");
+    navHome.classList.remove("clicked");
+    navAbout.classList.remove("clicked");
 });
 
 navWayuparty.addEventListener("click", function() {
@@ -132,7 +145,6 @@ rightArrow.addEventListener("click", function() {
     threeCards.classList.add("block");
     twoCards.classList.remove("block");
 });
-
 
 
 //view all jobs page
