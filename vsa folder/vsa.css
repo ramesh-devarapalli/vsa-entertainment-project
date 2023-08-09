@@ -572,17 +572,6 @@ body {
 }
 
 
-.explore_heading_container {
-    margin-top: 50px;
-    margin-left: 80px;
-}
-
-.main_icons_container {
-    margin-top: 50px;
-    margin-left: 80px;
-    display: flex;
-    justify-content: space-between;
-}
 
 .explore_heading {
     font-weight: 600;
@@ -596,31 +585,6 @@ body {
     margin-right: 5px;
 }
 
-.explore_icon_card {
-    background-color: white;
-    width: 220px;
-    height: 120px;
-    margin-right: 30px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #e5eaf4;
-    padding: 18px;
-    display: flex;
-}
-
-.icon_para {
-    font-family: "Roboto";
-    font-weight: bold;
-    margin-left: 4px;
-}
-
-.apply_button {
-    color: grey;
-    font-size: 14px;
-}
-
-
 
 .copyrights_part {
     background-color: grey;
@@ -633,7 +597,6 @@ body {
     color: black;
     font-family: Roboto;
     font-size: 26px;
-    margin-top: 40px;
     margin-left: 100px;
     padding: 10px;
     text-align: center;
@@ -833,63 +796,6 @@ body {
     font-family: "Roboto";
 }
 
-.job_types_container {
-    margin-top: 30px;
-    display: flex;
-    margin-left: 80px;
-}
-
-.job_types_container_below {
-    margin-top: 30px;
-    display: flex;
-
-}
-
-.button_styling {
-    margin-right: 30px;
-    padding: 5px;
-    border-radius: 25px;
-    padding-right: 14px;
-    padding-left: 14px;
-    border-width: thin;
-    font-weight: 500;
-}
-
-@media(max-width:768px) {
-    .job_types_container {
-        margin-top: 30px;
-        display: flex;
-        margin-left: 15px;
-        order: 0;
-    }
-
-    .button_styling {
-        margin-right: 10px;
-        padding: 5px;
-        border-radius: 25px;
-        padding-right: 5px;
-        padding-left: 5px;
-        border-width: thin;
-        font-weight: 500;
-    }
-
-    .job_types_container_below {
-        margin-top: 30px;
-        display: flex;
-        margin-left: 15px;
-        order: 1;
-    }
-
-    .jobs_main_container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.jobs_main_container {
-    display: flex;
-    margin-bottom: 40px;
-}
 
 .procut_designer_heading {
     font-size: 18px;
