@@ -3,6 +3,7 @@ let navAbout = document.getElementById("navAbout");
 let apps = document.getElementById("apps");
 let navCareers = document.getElementById("navCareers");
 let navWayuparty = document.getElementById("navWayuparty");
+let navAboutUs = document.getElementById("navAboutUs");
 
 
 let home = document.getElementById("home");
@@ -10,6 +11,7 @@ let about = document.getElementById("about");
 let careers = document.getElementById("careers");
 let appDropDown = document.getElementById("appDropDown");
 let wayuparty = document.getElementById("wayuparty");
+let aboutUs = document.getElementById("aboutUs");
 
 
 let applyArrow = document.getElementById("applyArrow");
@@ -30,6 +32,7 @@ let viewAllButton = document.getElementById("viewAllButton");
 navHome.addEventListener("click", function() {
     home.classList.remove("block");
     about.classList.add("block");
+    aboutUs.classList.add("block");
     careers.classList.add("block");
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
@@ -37,30 +40,56 @@ navHome.addEventListener("click", function() {
     navHome.classList.add("clicked");
     navAbout.classList.remove("clicked");
     navCareers.classList.remove("clicked");
+    navAboutUs.classList.remove("clicked");
+    apps.classList.remove("clicked");
 });
 
 navAbout.addEventListener("click", function() {
     home.classList.add("block");
     about.classList.remove("block");
+    aboutUs.classList.add("block");
     careers.classList.add("block");
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
     applyPortion.classList.add("block");
     navCareers.classList.remove("clicked");
     navHome.classList.remove("clicked");
+    apps.classList.remove("clicked");
     navAbout.classList.add("clicked");
+    navAboutUs.classList.remove("clicked");
 });
+
+
+navAboutUs.addEventListener("click", function() {
+    home.classList.add("block");
+    about.classList.add("block");
+    aboutUs.classList.remove("block");
+    careers.classList.add("block");
+    wayuparty.classList.add("block");
+    appDropDown.classList.add("block");
+    applyPortion.classList.add("block");
+    navCareers.classList.remove("clicked");
+    navHome.classList.remove("clicked");
+    apps.classList.remove("clicked");
+    navAbout.classList.remove("clicked");
+    navAboutUs.classList.add("clicked");
+});
+
 
 apps.addEventListener("click", function() {
     appDropDown.classList.toggle("block");
     navCareers.classList.remove("clicked");
     navHome.classList.remove("clicked");
     navAbout.classList.remove("clicked");
+    apps.classList.add("clicked");
+    navAboutUs.classList.remove("clicked");
+
 });
 
 navCareers.addEventListener("click", function() {
     home.classList.add("block");
     about.classList.add("block");
+    aboutUs.classList.add("block");
     careers.classList.remove("block");
     wayuparty.classList.add("block");
     appDropDown.classList.add("block");
@@ -68,12 +97,15 @@ navCareers.addEventListener("click", function() {
     navCareers.classList.add("clicked");
     navHome.classList.remove("clicked");
     navAbout.classList.remove("clicked");
+    apps.classList.remove("clicked");
+    navAboutUs.classList.remove("clicked");
 });
 
 navWayuparty.addEventListener("click", function() {
     home.classList.add("block");
     about.classList.add("block");
     careers.classList.add("block");
+    aboutUs.classList.add("block")
     wayuparty.classList.remove("block");
     appDropDown.classList.add("block");
     applyPortion.classList.add("block");
@@ -128,22 +160,6 @@ document.getElementById("careersForm").addEventListener("submit", function(event
 
     // Trigger a click event on the anchor element to open the user's default email client.
     anchor.click();
-});
-
-
-let threeCards = document.getElementById("threeCards");
-let twoCards = document.getElementById("twoCards");
-let leftArrow = document.getElementById("leftArrow");
-let rightArrow = document.getElementById("rightArrow");
-
-leftArrow.addEventListener("click", function() {
-    threeCards.classList.remove("block");
-    twoCards.classList.add("block");
-});
-
-rightArrow.addEventListener("click", function() {
-    threeCards.classList.add("block");
-    twoCards.classList.remove("block");
 });
 
 
