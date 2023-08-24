@@ -171,13 +171,16 @@ body {
 
 @media(max-width:768px) {
     .video_below_container {
-        margin-left: 0px;
+        display: flex;
+        align-items: center;
         margin-top: 40px;
+        margin-right: 20px;
     }
 
     .product_wayu_two_line_para {
         margin-left: 0px;
         margin-top: 10px;
+        margin-right: 20px;
     }
 
 
@@ -185,9 +188,11 @@ body {
 }
 
 .video_below_container {
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 40px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .product_wayu_heading {
@@ -198,7 +203,7 @@ body {
 }
 
 .product_wayu_two_line_para {
-    margin-left: 90px;
+    margin-left: 100px;
     font-size: 14px;
     font-family: "poppins", Sans-Serif;
 }
@@ -216,7 +221,7 @@ body {
         flex-direction: column;
         margin-right: 0px;
         margin-top: 60px;
-        justify-content: flex-start;
+        align-items: center;
     }
 
     .video_below_container {
@@ -234,7 +239,14 @@ body {
         border-color: #e5eaf4;
         padding: 18px;
         margin-bottom: 20px;
+    }
 
+    .product_wayu_last_para {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 14px;
+        margin-right: 25px;
+        font-family: "poppins", Sans-Serif;
     }
 
 }
@@ -790,18 +802,6 @@ body {
     margin-top: 70px;
 }
 
-.wayuparty_button {
-    width: 150px;
-    height: 50px;
-    background-color: #4287f5;
-    margin-left: 190px;
-    border-radius: 10px;
-    color: white;
-    border-width: 0px;
-    font-size: 14px;
-    font-family: "poppins", Sans-Serif;
-    font-weight: bold;
-}
 
 .video_button_container {
     display: flex;
@@ -831,17 +831,9 @@ body {
         height: 130px;
         width: 280px;
         order: 0;
+        margin-left: 50px;
     }
 
-    .wayuparty_button {
-        width: 100px;
-        height: 50px;
-        margin-left: 200px;
-        background-color: #4287f5;
-        border-radius: 10px;
-        color: white;
-        border-width: 0px;
-    }
 }
 
 
@@ -897,6 +889,14 @@ body {
     height: 70px;
     width: 260px;
     margin-left: 170px;
+}
+
+@media(max-width:768px) {
+    .wayuparty_below_video_image {
+        height: 40px;
+        width: 160px;
+        margin-left: 120px;
+    }
 }
 
 .nine_images {
